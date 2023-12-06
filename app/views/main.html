@@ -7,11 +7,18 @@
         <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
         #{get 'moreStyles' /}
         <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+        <ul id="tools">
+            <li>
+                <a href="@{Admin.index()}">Log in to write something</a>
+            </li>
+        </ul>
     </head>
     <body>
         #{doLayout /}
         
         <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <script src="@{'/public/javascripts/jquery-1.4.2.min.js'}"></script>
+        <script src="@{'/public/javascripts/jquery.tools.min.js'}"></script>
         #{get 'moreScripts' /}
     </body>
 </html>
